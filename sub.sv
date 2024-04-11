@@ -2,7 +2,8 @@ module sub(
 	input logic [7:0] a,
   input logic [7:0] b,
   output logic [7:0] sum,
-  output logic cout
+  output logic cout,
+  input logic cin
 );
 
 logic [7:0] carry;
