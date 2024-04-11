@@ -2,10 +2,11 @@ module sub(
 	input logic [7:0] a,
   input logic [7:0] b,
   output logic [7:0] sum,
-  output logic cout,
-  input logic cin
+  output logic cout
 );
 
+logic cin;
+assign cin = 1'b1;
 logic [7:0] carry;
 
 FA fa1 (.sum(sum[0]), .a(a[0]), .b(b[0]^cin), .cin(1'b1), .cout(carry[0])); 		//P0
